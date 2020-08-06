@@ -15,7 +15,7 @@ First Part - Core JDBC using MySQL
 based on Java - (Threads, JDBC, DAO, Java Beans, OOP, Custom Querys)
 
 Second Part - Spring (framework)
-Core, Boot, Data, WEB
+Core, Boot, Data
 
 @Client side(to be updated) -
 
