@@ -3,16 +3,17 @@ package com.couponsystem.jay.login;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.couponsystem.jay.exceptions.LoginFailledException;
 import com.couponsystem.jay.exceptions.NoAccessException;
 import com.couponsystem.jay.exceptions.NotFoundException;
-import com.couponsystem.jay.service.AdminFacadeService;
-import com.couponsystem.jay.service.ClientFacadeService;
-import com.couponsystem.jay.service.CompanyFacadeService;
-import com.couponsystem.jay.service.CustomerFacadeService;
+import com.couponsystem.jay.service.facade.AdminFacadeService;
+import com.couponsystem.jay.service.facade.ClientFacadeService;
+import com.couponsystem.jay.service.facade.CompanyFacadeService;
+import com.couponsystem.jay.service.facade.CustomerFacadeService;
 
-@Component
+@Service
 @Lazy
 public class LoginManager {
 

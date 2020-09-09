@@ -36,8 +36,8 @@ public interface CouponRepository extends JpaRepository<Coupon, Integer> {
 
 	@Transactional
 	@Modifying
-	@Query(value = "DELETE from customers_coupons WHERE customer_id=:customerID and coupons_id=:couponID", nativeQuery = true)
-	void deleteCouponPurchase(int customerID,int couponID);
+	@Query(value = "DELETE from customers_coupons WHERE coupons_id=:couponID", nativeQuery = true)
+	void deleteCouponPurchase(int couponID);
 
 	
 	@Transactional

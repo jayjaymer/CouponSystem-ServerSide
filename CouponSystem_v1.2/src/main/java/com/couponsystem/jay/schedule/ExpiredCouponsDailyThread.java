@@ -8,8 +8,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.couponsystem.jay.beans.Coupon;
-import com.couponsystem.jay.service.CompanyFacadeService;
-import com.couponsystem.jay.service.CouponService;
+import com.couponsystem.jay.service.facade.CompanyFacadeService;
+import com.couponsystem.jay.service.jpa.CouponService;
 
 @Component
 public class ExpiredCouponsDailyThread implements Runnable{
@@ -50,9 +50,6 @@ public class ExpiredCouponsDailyThread implements Runnable{
 			}
 		}
 	}
-	
-	public void stopJob() {
-		quit = true;
-	}
+
 
 }
